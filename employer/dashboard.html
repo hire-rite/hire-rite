@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employer Dashboard</title>
+  <link rel="stylesheet" href="css/employer-style.css">
+</head>
+<body>
+  <header class="fixed-header">
+    <div class="logo">YourLogo</div>
+    <nav class="top-nav">
+      <div class="notifications">🔔</div>
+      <div class="user-menu">
+        <span class="username">John’s Recruiting Co.</span>
+        <div class="dropdown">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="sidebar">
+    <ul>
+      <li><a href="dashboard.html">📊 Dashboard</a></li>
+      <li><a href="upload-candidate.html">📤 Upload Candidate</a></li>
+      <li><a href="post-position.html">🧾 Post Position</a></li>
+    </ul>
+  </aside>
+
+  <main class="dashboard-content">
+    <h1>Welcome back, <span class="business-name">John’s Recruiting Co.</span>!</h1>
+
+    <section class="stats-cards">
+      <div class="card">Total Candidates: <strong>132</strong></div>
+      <div class="card">Open Positions: <strong>8</strong></div>
+      <div class="card">Successful Hires: <strong>47</strong></div>
+      <div class="card">This Month’s Activity: <strong>12</strong></div>
+    </section>
+
+    <section class="quick-actions">
+      <button>Upload New Candidate</button>
+      <button>Post New Position</button>
+      <button>Search Database</button>
+    </section>
+
+    <section class="charts">
+      <canvas id="performanceChart"></canvas>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/employer.js"></script>
+</body>
+</html>
