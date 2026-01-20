@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post New Position</title>
+  <link rel="stylesheet" href="css/employer-style.css">
+</head>
+<body>
+  <header class="fixed-header"><div class="logo">YourLogo</div></header>
+
+  <aside class="sidebar">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="upload-candidate.html">Upload Candidate</a></li>
+      <li><a href="post-position.html" class="active">Post Position</a></li>
+    </ul>
+  </aside>
+
+  <main class="dashboard-content">
+    <h1>Post Position</h1>
+    <form>
+      <label>Job Title: <input type="text" required></label>
+      <label>Industry:
+        <select><option>Technology</option><option>Finance</option></select>
+      </label>
+      <label>Salary Min: <input type="number"></label>
+      <label>Salary Max: <input type="number"></label>
+      <label>Skills: <input type="text"></label>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
