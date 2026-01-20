@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Candidate</title>
+  <link rel="stylesheet" href="css/employer-style.css">
+</head>
+<body>
+  <header class="fixed-header"><div class="logo">YourLogo</div></header>
+
+  <aside class="sidebar">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="upload-candidate.html" class="active">Upload Candidate</a></li>
+      <li><a href="post-position.html">Post Position</a></li>
+    </ul>
+  </aside>
+
+  <main class="dashboard-content">
+    <h1>Upload New Candidate</h1>
+
+    <form id="candidateForm">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label>Full Name: <input type="text" required></label>
+        <label>Email: <input type="email" required></label>
+        <label>Phone: <input type="tel" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Upload PDF</legend>
+        <div class="upload-area" id="pdfUploadArea">
+          <p>Drag & Drop PDF or Click to Browse</p>
+          <input type="file" id="pdfFile" accept="application/pdf" hidden>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit Candidate</button>
+    </form>
+
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <p>Candidate uploaded successfully!</p>
+        <button onclick="document.getElementById('successModal').style.display='none'">OK</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/employer.js"></script>
+</body>
+</html>
