@@ -1,0 +1,11 @@
+body { font-family: Arial; margin: 0; background: #f4f6fb; color: #333; }
+.fixed-header { background: #0052cc; color: #fff; height: 60px; display:flex; align-items:center; padding:0 1rem; position:fixed; top:0; left:0; right:0; }
+.sidebar { position:fixed; top:60px; left:0; bottom:0; width:200px; background:#253858; color:#fff; }
+.sidebar a { display:block; color:#fff; text-decoration:none; padding:0.8rem 1rem; }
+.sidebar a:hover, .sidebar a.active { background:#344e83; }
+.dashboard-content { margin-left:220px; padding:80px 20px; }
+.stats-cards { display:flex; gap:1rem; }
+.stats-cards .card { flex:1; background:#fff; padding:1rem; border-radius:6px; }
+.upload-area { border:2px dashed #ccc; text-align:center; padding:1rem; cursor:pointer; background:#fff; }
+.modal { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); }
+.modal-content { background:white; padding:1rem; max-width:300px; margin:10% auto; text-align:center; border-radius:6px; }
