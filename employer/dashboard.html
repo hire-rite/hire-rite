@@ -24,9 +24,15 @@
 
   <aside class="sidebar">
     <ul>
-      <li><a href="dashboard.html">📊 Dashboard</a></li>
+      <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
       <li><a href="upload-candidate.html">📤 Upload Candidate</a></li>
       <li><a href="post-position.html">🧾 Post Position</a></li>
+      <li><a href="#">🔍 Search Database</a></li>
+      <li><a href="#">📂 My Positions</a></li>
+      <li><a href="#">📋 Templates</a></li>
+      <li><a href="#">👥 Team</a></li>
+      <li><a href="#">📈 Reports</a></li>
+      <li><a href="#">⚙️ Settings</a></li>
     </ul>
   </aside>
 
@@ -34,10 +40,10 @@
     <h1>Welcome back, <span class="business-name">John’s Recruiting Co.</span>!</h1>
 
     <section class="stats-cards">
-      <div class="card">Total Candidates: <strong>132</strong></div>
-      <div class="card">Open Positions: <strong>8</strong></div>
-      <div class="card">Successful Hires: <strong>47</strong></div>
-      <div class="card">This Month’s Activity: <strong>12</strong></div>
+      <div class="card">Total Candidates: 132</div>
+      <div class="card">Open Positions: 8</div>
+      <div class="card">Successful Hires: 47</div>
+      <div class="card">This Month’s Activity: 12</div>
     </section>
 
     <section class="quick-actions">
@@ -47,7 +53,30 @@
     </section>
 
     <section class="charts">
+      <h2>Performance (Hires Over Time)</h2>
       <canvas id="performanceChart"></canvas>
+    </section>
+
+    <section class="activity-feed">
+      <h2>Recent Activity</h2>
+      <ul>
+        <li>Candidate <b>Jane Doe</b> uploaded 2 hours ago</li>
+        <li>Position <b>Software Engineer</b> posted yesterday</li>
+      </ul>
+    </section>
+
+    <section class="tasks-notifications">
+      <div class="tasks">
+        <h2>Upcoming Tasks</h2>
+        <ul>
+          <li>Interview with Mark P. — Tomorrow</li>
+          <li>Review Data Analyst position — Friday</li>
+        </ul>
+      </div>
+      <div class="notifications-panel">
+        <h2>Notifications</h2>
+        <p>No new alerts</p>
+      </div>
     </section>
   </main>
 
