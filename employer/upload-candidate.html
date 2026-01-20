@@ -19,24 +19,67 @@
 
   <main class="dashboard-content">
     <h1>Upload New Candidate</h1>
+    <p>Please fill all required fields below.</p>
 
     <form id="candidateForm">
       <fieldset>
-        <legend>Personal Info</legend>
+        <legend>Personal Information</legend>
         <label>Full Name: <input type="text" required></label>
         <label>Email: <input type="email" required></label>
         <label>Phone: <input type="tel" required></label>
+        <label>Date of Birth: <input type="date"></label>
+        <label>Gender:
+          <select>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </label>
       </fieldset>
 
       <fieldset>
-        <legend>Upload PDF</legend>
-        <div class="upload-area" id="pdfUploadArea">
-          <p>Drag & Drop PDF or Click to Browse</p>
-          <input type="file" id="pdfFile" accept="application/pdf" hidden>
-        </div>
+        <legend>Address</legend>
+        <label>Street: <input type="text"></label>
+        <label>City: <input type="text"></label>
+        <label>State: <input type="text"></label>
+        <label>ZIP: <input type="text"></label>
+        <label>Country:
+          <select>
+            <option>USA</option>
+            <option>Canada</option>
+          </select>
+        </label>
       </fieldset>
 
-      <button type="submit">Submit Candidate</button>
+      <fieldset>
+        <legend>Professional Information</legend>
+        <label>Education Level:
+          <select>
+            <option>High School</option>
+            <option>Bachelor’s</option>
+          </select>
+        </label>
+        <label>Years Experience:
+          <select>
+            <option>0-2</option>
+            <option>3-5</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Assessment Upload</legend>
+        <div class="upload-area" id="pdfUploadArea">
+          <p>Drag & Drop PDF Here or Click to Browse</p>
+          <input type="file" id="pdfFile" accept="application/pdf" hidden>
+        </div>
+        <label><input type="checkbox"> Request optional video introduction</label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit">Submit Candidate</button>
+        <button type="button" id="cancelUpload" class="cancel">Cancel</button>
+      </div>
     </form>
 
     <div id="successModal" class="modal">
